@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghav - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4df778f5a8.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #18181B;
+            color: whitesmoke;
+            font-family: 'Ysabeau Infant', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: #F43F5E;
+            font-size: 1.4rem;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-size: 1.6rem;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3.05rem;
+            margin-right: -37px;
+            margin-top: 230px;
+        }
+
+        .btn {
+            padding: 12px;
+            background-color: #F43F5E;
+            color: whitesmoke;
+            border: 2px solid #F43F5E;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 106px;
+            margin-left: 147px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+
+        .rightSection img {
+            margin: 35px 0;
+            margin-left: -37px;
+            width: 141%;
+        }
+
+        .color {
+            color: #F43F5E;
+        }
+
+        .colorSecond {
+            color: #F43F5E;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: -10px;
+        }
+
+        .secondSection h1 {
+            font-size: 3rem;
+        }
+
+
+
+        .colorThree {
+            color: #F43F5E;
+        }
+
+        .subsecondSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .techRightsection {
+            font-size: 9.5rem;
+            margin-left: -37px;
+            margin-top: 250px;
+        }
+
+        .techLeftsection img {
+            margin: 35px 0;
+            margin-right: -37px;
+            width: 80%;
+
+        }
+
+        #Love {
+            color: #F43F5E;
+        }
+
+        .techRightsection img {
+            width: 80%;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            padding: -10px;
+        }
+
+        .thirdSection h1 {
+            font-size: 3rem;
+            margin-top: 70px;
+        }
+
+        .colorFour {
+            color: #F43F5E;
+        }
+
+        .subthirdSection img {
+            width: 99%;
+            margin-top: 70px;
+        }
+
+        .content {
+            font-size: 4rem;
+            margin-left: 147px;
+            margin-top: 24px;
+        }
+
+        #SAIL {
+            color: #F43F5E;
+        }
+
+        .Contact {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contactLeft {
+            flex-basis: 35%;
+        }
+
+        .contactLeft h1 {
+            font-size: 3rem;
+            margin-top: 70px;
+            margin-left: 147px;
+        }
+
+        #ContactMe {
+            color: #F43F5E;
+            margin-left: 147px;
+        }
+
+        .social-icons {
+            margin-top: 50px;
+            margin-left: 147px;
+        }
+
+        .social-icons a i {
+            text-decoration: none;
+            color: #F43F5E;
+            font-size: 4rem;
+            padding: 12px;
+        }
+
+        .social-icons a i :hover {
+            color: bisque;
+        }
+
+        .copyright {
+            font-size: 1.02rem;
+            text-align: center;
+            color: #F43F5E;
+        }
+
+        @media screen and (max-width: 500px) {
+            nav ul {
+                display: flex;
+                justify-content: center;
+                font-size: medium;
+            }
+
+            .left {
+                font-size: 1rem;
+                margin-left: 19px;
+            }
+
+            .firstSection {
+                display: flex;
+                justify-content: space-around;
+                margin: 23px 0;
+                flex-direction: column-reverse;
+            }
+
+            .rightSection img {
+                margin: 23px 0;
+                margin-left: -29px;
+                width: 367%;
+            }
+
+            .leftSection {
+                font-size: 1.78rem;
+                margin-top: -56px;
+                margin-left: 159px;
+                marker-end: 94px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Raghav's Developer Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="Home">
+            <div class="leftSection">
+                Hi, My name is <span class="color">Raghav Sharma</span>
+                <div>I am a <span class="colorSecond"><span id="element">Frontend Developer.</span></span></div>
+            </div>
+            </div>
+            <div class="rightSection">
+                <img src="image developer.webp">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <div class="heading" id="Skills">
+                <h1>Technical Skills</h1>
+                <span class="colorThree"><span id="Work">Things I have learned so far</span> </span>
+            </div>
+        </section>
+        <section class="subsecondSection">
+            <div class="techLeftsection"><img src="Tech.svg">
+            </div>
+            <div class="techRightsection">
+                <span id="Love"></span>
+                <br>
+                <img src="tech1.svg">
+            </div>
+        </section>
+
+        <section class="thirdSection">
+            <div class="thirdHeading" id="Projects">
+                <h1>Projects</h1>
+                <span class="colorFour"><span id="Created">Things I have created so far.</span></span>
+            </div>
+        </section>
+        <section class="subthirdSection">
+            <div>
+                <img src="Projects.svg">
+            </div>
+            <br>
+            <br>
+            <div class="content">
+                The building blocks of
+                <span id="SAIL"></span>
+            </div>
+        </section>
+        <div class="buttons">
+            <button class="btn"><a href="Raghav's Resume.pdf" download>Download Resume</a>
+        </div>
+        <div id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contactLeft">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <span id="ContactMe">Contact Me</span>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/velikan_4875/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/raghav-sharma-066a54236/"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="copyright">
+            <b>All rights reserved|www.raghavdevportfolio.com</b>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>'
+                , '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>'
+                , '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>'
+                , '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>'
+                , '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>'
+                , '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>'
+                , '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>', '<b>Frontend</b> <b>Developer.</b>', '<b>UI/UX</b> <b>Developer.</b>', '<b>Video</b> <b>Editor.</b>'
+            ],
+            typeSpeed: 90,
+        });
+    </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#Work', {
+            strings: ['<b>Things I have learned so far.</b>'],
+            typeSpeed: 150,
+        });
+    </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#Love', {
+            strings: ['<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>',
+                '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>'
+                , '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>', '<b><>Develop.</b>', '<b>~Explore.</b>', '<b>!Innovate.</b>', '<b>_Create.</b>'
+            ],
+            typeSpeed: 130,
+        });
+    </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#Created', {
+            strings: ['<b>Things I have created so far.</b>'],
+            typeSpeed: 150,
+        });
+    </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#SAIL', {
+            strings: ['<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'
+                , '<b> Innovation.</b>', '<b> Creativity.</b>', '<b> Development.</b>', '<b> Imagination.</b>'],
+            typeSpeed: 150,
+        });
+    </script>
+    </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#ContactMe', {
+            strings: ['<b>Would love to hear from you.</b>'],
+            typeSpeed: 150,
+        });
+    </script>
+</body>
+
+</html>
